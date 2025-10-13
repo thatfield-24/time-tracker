@@ -7,11 +7,14 @@
   margin: 1vw auto 1vw;
   padding: 1vw;
 }
-
+footer {
+  text-align: center;
+  margin: auto 10vw;
+}
 
 /* Phone Sizing */
 @media (min-width: 320px){
-  p {
+  p, a{
     font-size: 5vw;
   }
   h1 {
@@ -36,7 +39,7 @@
 
 /* Tablet Or Large Phone */
 @media (min-width: 768px){
-  p {
+  p, a{
     font-size: 2.5vw;
   }
   h1 {
@@ -60,7 +63,7 @@
 
 /* Laptop Sizing */
 @media (min-width: 1025px){
-  p {
+  p, a {
     font-size: 1.5vw;
   }
   h1 {
