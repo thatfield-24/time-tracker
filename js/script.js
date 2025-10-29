@@ -9,7 +9,7 @@ function init(){
      var fitness = document.getElementById('fitness');
      var travel = document.getElementById('travel');
      var freeTime = (168 - (sleep.value * 7) - classes.value - homework.value - fitness.value - travel.value)
-    document.getElementById('textoutput').innerHTML = "Free Time Hours Left: " + freeTime;
+    document.getElementById('textoutput').innerHTML = "Free Time Hours Left: "+ freeTime;
 
  }
  

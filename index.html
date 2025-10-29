@@ -3,28 +3,28 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Basic JavaScript Event Handling and DOM</title>
+  <title>Time Tracker</title>
   <link rel="stylesheet" href="style/style.css">
   <script async src="js/script.js"></script>
 </head>
-<body>
-  <h1 class="center">Time Tracker</h1>
-  <div class="container">
-    <p>Total time in a week: 168 hours. Most people spend around 112 hours awake each week which is equal to <b>8 hours of sleep</b> each day.</p>
+<body class="container">
+  <h1>Time Tracker</h1>
+  <div>
+    <p>Total time in a week: 168 hours. Most people spend around 112 hours awake each week which is equal to <b>8 hours of sleep</b> each day. It is also reasonable to estimate about 3 hours of homework for each hour of class.</p>
     <p>For example, I sleep 8 hours a day, have class for 17.5 hours, set aside 45 hours for homework, 12 for fitness, and 6 for travel.</p>
     <!--Below are the labels and input boxes for the site-->
-    <br><br><label>Enter average hours you sleep each day <br><input type="number" min="0"  id="sleep" type="text" name="textentry" placeholder="Enter a number" onkeypress="return (event.charCode != 45)"></label>
-    <br><br><label>Enter hours spent in classes and/or work<br><input type="number" min="0"  id="classes" type="text" name="textentry" placeholder="Enter a number" onkeypress="return (event.charCode != 45)"></label>
-    <br><br><label>Enter hours spent on homework <br><input type="number" min="0"  id="homework" type="text" name="textentry" placeholder="Enter a number" onkeypress="return (event.charCode != 45)"></label>
-    <br><br><label>Enter hours spent on health & wellbeing <br><input type="number" min="0"  id="fitness" type="text" name="textentry" placeholder="Enter a number" onkeypress="return (event.charCode != 45)"></label>
-    <br><br><label>Enter hours spent traveling to work, school, or the gym <br><input type="number" min="0" id="travel" type="text" name="textentry" placeholder="Enter a number" onkeypress="return (event.charCode != 45)"></label>
+    <br><br><label>Enter average hours you sleep each day <br><input type="number" tabindex="1" min="0"  id="sleep" type="text" name="textentry" placeholder="Enter a number" onkeypress="return (event.charCode != 45)"></label>
+    <br><br><label>Enter hours spent in classes and/or work<br><input type="number" tabindex="2" min="0"  id="classes" type="text" name="textentry" placeholder="Enter a number" onkeypress="return (event.charCode != 45)"></label>
+    <br><br><label>Enter hours spent on homework <br><input type="number" tabindex="3" min="0"  id="homework" type="text" name="textentry" placeholder="Enter a number" onkeypress="return (event.charCode != 45)"></label>
+    <br><br><label>Enter hours spent on health & wellbeing <br><input type="number" tabindex="4" min="0"  id="fitness" type="text" name="textentry" placeholder="Enter a number" onkeypress="return (event.charCode != 45)"></label>
+    <br><br><label>Enter hours spent traveling to work, school, or the gym <br><input type="number" tabindex="6" min="0" id="travel" type="text" name="textentry" placeholder="Enter a number" onkeypress="return (event.charCode != 45)"></label>
     <!--Calculate Button and Results-->
-    <div id="calculate">Calculate</div>
+    <div id="calculate" tabindex="6">Calculate</div>
     <p id="textoutput" class="center"><b>Free Time Hours Left: </b></p>
   </div>
 </body>
-<footer>
-    <p class="center">Programmed by Tristan Hatfield</p>
-    <a href="https://www.linkedin.com/in/tristan-hatfield/" target="_blank">Add me on LinkedIn</a>
+<footer class="container">
+    <p>Programmed by Tristan Hatfield</p>
+    <a href="https://www.linkedin.com/in/tristan-hatfield/" tabindex="7" target="_blank">Add me on LinkedIn</a>
 </footer>
 </html>
