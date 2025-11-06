@@ -1,17 +1,23 @@
 .container {
   text-align: center;
-  width: 100vw;
+  width: 90vw;
   margin: 1vw auto 1vw;
   padding: 1vw;
 }
-footer {
+footer, footer a{
   text-align: center;
-  width: 100vw;
+  width: 90vw;
   margin: 1vw auto 1vw;
   padding: 1vw;
 }
 #textoutput {
-  text-style: bold;
+  font-style: bold;
+}
+nav, nav a {
+  text-align: center;
+  width: 90vw;
+  margin: 1vw auto 1vw;
+  padding: 1vw;
 }
 
 /* Phone Sizing */
@@ -36,7 +42,6 @@ footer {
     font-size: 24px;
     font-weight: bold;
   }
-  
 }
 
 /* Tablet Or Large Phone */
@@ -66,7 +71,7 @@ footer {
 /* Laptop Sizing */
 @media (min-width: 1025px){
   p, a {
-    font-size: 1.5vw;
+    font-size: 2vw;
   }
   h1 {
     font-size: 2vw;

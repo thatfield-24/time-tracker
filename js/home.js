@@ -1,5 +1,4 @@
 function init(){
-//add your javascript between these two lines of code
  var button = document.getElementById('calculate');
  
  function textAlert(){
