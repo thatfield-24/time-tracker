@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>To-Do List</title>
   <link rel="stylesheet" href="style/style.css">
-  <script async src="js/home.js"></script>
+  <script async src="js/toDo.js"></script>
 </head>
 <nav>
  <a href="index.html">Home</a>
@@ -14,7 +14,13 @@
 <body class="container">
   <h1>To-Do List</h1>
   <div>
-    <p>Track Your Daily To-Do Lists.</p>
+    <h2>Track Your Daily To-Do Lists</h2>
+    <label>Enter information about the task.<br><input type="text" tabindex="1" min="0"  id="task_name" type="text" name="textentry" placeholder="Enter task info""></label>
+    <div id="add_button">Add New Task</div>
+    <ul id="tasks">
+      <li>Test</li>
+      <li>Test2</li>
+    </ul>
   </div>
 </body>
 <footer class="container">

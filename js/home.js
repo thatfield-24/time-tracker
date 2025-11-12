@@ -1,7 +1,7 @@
 function init(){
  var button = document.getElementById('calculate');
  
- function textAlert(){
+ function freeTime(){
      var sleep = document.getElementById('sleep');
 	 var classes = document.getElementById('classes');
      var homework = document.getElementById('homework');
@@ -12,7 +12,7 @@ function init(){
 
  }
  
- button.addEventListener('click', textAlert)
+ button.addEventListener('click', freeTime)
 }
 
 window.addEventListener('load', init);
