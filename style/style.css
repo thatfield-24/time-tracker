@@ -19,10 +19,16 @@ nav, nav a {
   margin: 1vw auto 1vw;
   padding: 1vw;
 }
+ul {
+  list-style-type: none;
+}
+li {
+  text-align: center;
+}
 
 /* Phone Sizing */
 @media (min-width: 320px){
-  p, a{
+  p, a, ul{
     font-size: 5vw;
   }
   h1 {
@@ -32,17 +38,7 @@ nav, nav a {
     font-size: 5vw;
     margin: 1vw;
   }
-  #calculate {
-    width: 75vw;
-    text-align: center;
-    color: #fff;
-    background-color: #c00;
-    padding: 2vw 0;
-    margin: 10vw auto;
-    font-size: 24px;
-    font-weight: bold;
-  }
-  #add_button {
+  #calculate, #add_button {
     width: 75vw;
     text-align: center;
     color: #fff;
@@ -56,7 +52,7 @@ nav, nav a {
 
 /* Tablet Or Large Phone */
 @media (min-width: 768px){
-  p, a{
+  p, a, ul{
     font-size: 2.5vw;
   }
   h1 {
@@ -66,7 +62,7 @@ nav, nav a {
     font-size: 2.5vw;
     margin: 1vw;
   }
-  #calculate {
+  #calculate, #add_button {
     width: 75vw;
     text-align: center;
     color: #fff;
@@ -80,7 +76,7 @@ nav, nav a {
 
 /* Laptop Sizing */
 @media (min-width: 1025px){
-  p, a {
+  p, a, ul {
     font-size: 2vw;
   }
   h1 {
@@ -90,8 +86,8 @@ nav, nav a {
     font-size: 2vw;
     margin: 1vw;
   }
-  #calculate {
-    width: 10vw;
+  #calculate, #add_button {
+    width: 25vw;
     text-align: center;
     color: #fff;
     background-color: #c00;
