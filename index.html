@@ -7,13 +7,13 @@
   <link rel="stylesheet" href="style/style.css">
   <script async src="js/home.js"></script>
 </head>
-<nav>
- <a href="index.html">Home</a>
- <a href="toDo.html">To-Do List</a>
-</nav>
 <body class="container">
-  <h1>Time Tracker</h1>
-  <div>
+  <main class="container" aria-labelledby="title">
+    <!---NAV BAR --->
+    <a class="navbar" href="index.html">Home</a>
+    <a class="navbar" href="toDo.html">To-Do List</a>
+    <!---NAV BAR --->
+    <h1>Time Tracker</h1>
     <p>Total time in a week: 168 hours. Most people spend around 56 hours asleep each week which is equal to <b>8 hours of sleep</b> each day. This equates to 112 hours of waking hours. It is also reasonable to estimate about 3 hours of homework for each hour of class.</p>
     <p>For example, I sleep 8 hours a day, have class for 17.5 hours, set aside 45 hours for homework, 12 for fitness, and 6 for travel.</p>
     <!--Below are the labels and input boxes for the site-->
@@ -24,12 +24,10 @@
     <br><br><label>Enter hours spent traveling to work, school, or the gym <br><input type="number" tabindex="6" min="0" id="travel" type="text" name="textentry" placeholder="Enter a number" onkeypress="return (event.charCode != 45)"></label>
     <!--Calculate Button and Results-->
     <div id="calculate" tabindex="6">Calculate</div>
-    <p id="textoutput" class="center"><b>Free Time Hours Left: </b></p>
-  </div>
+    <p id="textoutput" class="center">Free Time Hours Left: </p>
+    <footer class="container">
+      <p>Programmed by Tristan Hatfield <a href="https://www.linkedin.com/in/tristan-hatfield/" tabindex="7" target="_blank">Add me on LinkedIn</a></p>
+    </footer>
+  </main>
 </body>
-<footer class="container">
-    <p>Programmed by Tristan Hatfield <a href="https://www.linkedin.com/in/tristan-hatfield/" tabindex="7" target="_blank">Add me on LinkedIn</a></p>
-    <a href="index.html">Home</a>
-    <a href="toDo.html">To-Do List</a>
-</footer>
 </html>
