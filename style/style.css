@@ -1,22 +1,49 @@
-.container {
-  text-align: center;
-  width: 100vw;
-  margin: 1vw auto 1vw;
-  padding: 1vw;
+:root{
+  --bg:#f7f7fb; --card:#ffffff; --accent:#3b82f6; --muted:#6b7280; --done:#10b981;
+  --danger:#ef4444; font-family:Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
 }
-footer {
+*{box-sizing:border-box}
+body{
+  margin:0; min-height:100vh; background:linear-gradient(180deg,var(--bg),#eef2ff 60%);
+  display:flex; align-items:center; justify-content:center; padding:40px;
+  color:#0f172a;
+}
+.container{
+  width:100%; background:var(--card); border-radius:12px; padding:20px;
+  box-shadow:0 10px 30px rgba(2,6,23,0.08);
+}
+header{
+  display:flex; 
+  align-items:center; 
+  justify-content:space-between; 
+  gap:12px; 
+  margin-bottom:12px
+}
+header, footer{
   text-align: center;
-  width: 100vw;
+  width: 90vw;
   margin: 1vw auto 1vw;
   padding: 1vw;
 }
 #textoutput {
-  text-style: bold;
+  font-style: bold;
+}
+.navbar {
+  text-align: center;
+  width: 90vw;
+  margin: 1vw auto 1vw;
+  padding: 1vw;
+}
+ul {
+  list-style-type: none;
+}
+li {
+  text-align: center;
 }
 
 /* Phone Sizing */
 @media (min-width: 320px){
-  p, a{
+  p, a, ul{
     font-size: 5vw;
   }
   h1 {
@@ -30,18 +57,17 @@ footer {
     width: 75vw;
     text-align: center;
     color: #fff;
-    background-color: #c00;
+    background-color: var(--accent);
     padding: 2vw 0;
     margin: 10vw auto;
     font-size: 24px;
     font-weight: bold;
   }
-  
 }
 
 /* Tablet Or Large Phone */
 @media (min-width: 768px){
-  p, a{
+  p, a, ul{
     font-size: 2.5vw;
   }
   h1 {
@@ -55,7 +81,7 @@ footer {
     width: 75vw;
     text-align: center;
     color: #fff;
-    background-color: #c00;
+    background-color: var(--accent);
     padding: 2vw 0;
     margin: 2.5vw auto;
     font-size: 24px;
@@ -65,8 +91,8 @@ footer {
 
 /* Laptop Sizing */
 @media (min-width: 1025px){
-  p, a {
-    font-size: 1.5vw;
+  p, a, ul {
+    font-size: 2vw;
   }
   h1 {
     font-size: 2vw;
@@ -76,10 +102,10 @@ footer {
     margin: 1vw;
   }
   #calculate {
-    width: 10vw;
+    width: 25vw;
     text-align: center;
     color: #fff;
-    background-color: #c00;
+    background-color: var(--accent);
     padding: 1vw 0;
     margin: 1vw auto;
     font-size: 24px;

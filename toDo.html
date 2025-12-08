@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>To-Do List</title>
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="style/todo.css">
+  <script src="js/toDo.js"></script>
+</head>
+<body class="container">
+  <main class="container" aria-labelledby="title">
+    <!---NAV BAR --->
+    <a class="navbar" href="index.html">Home</a>
+    <a class="navbar" href="toDo.html">To-Do List</a>
+    <!---NAV BAR --->
+    <h1 id="title">To-Do List</h1>
+    <div class="small" id="last-saved" aria-live="polite"></div>
+    <form id="addForm" class="new-task" autocomplete="off" aria-label="Add new task">
+      <input id="newInput" type="text" placeholder="Add a new task and press Enter or click Add" aria-label="New task" />
+      <button class="btn" type="submit" id="addBtn">Add</button>
+      </form>
+    <div class="toolbar" role="toolbar" aria-label="Task controls">
+      <div class="filters" role="tablist" aria-label="Filter tasks">
+        <button data-filter="all" class="active" role="tab" aria-selected="true">All</button>
+        <button data-filter="active" role="tab" aria-selected="false">Active</button>
+        <button data-filter="completed" role="tab" aria-selected="false">Completed</button>
+      </div>
+      <div class="count" id="count" aria-live="polite">0 items</div>
+      <div style="margin-left:8px">
+        <button class="icon-btn" id="clearCompleted" title="Clear completed tasks">Clear Completed</button>
+        <button class="icon-btn" id="importBtn" title="Import sample tasks">Import Sample</button>
+      </div>
+    </div>
+    <ul id="list" class="todo-list" aria-live="polite" aria-label="To-do items"></ul>
+    <div id="empty" class="empty" hidden>No tasks yet. Add one above.</div>
+    <p class="small" style="margin-top:14px">Tasks are saved locally in your browser.</p>
+    <noscript><p class="small" style="color:var(--danger)">JavaScript is required for full functionality.</p></noscript>
+    <footer class="container">
+      <p>Programmed by Tristan Hatfield <a href="https://www.linkedin.com/in/tristan-hatfield/" tabindex="7" target="_blank">Add me on LinkedIn</a></p>
+    </footer>
+  </main>
+</body>
+</html>
