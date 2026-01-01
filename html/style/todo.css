@@ -3,7 +3,7 @@ header h1{font-size:1.25rem; margin:0}
   display:flex; gap:8px;
  }
 .new-task input{
-  flex:1; padding:10px 12px; border-radius:8px; border:1px solid #e6e9ef; font-size:0.95rem; outline:none;
+  flex:1; padding:10px 12px; border-radius:8px; border:1px solid #e6e9ef; font-size:1rem; outline:none;
 }
 .new-task input:focus{box-shadow:0 0 0 4px rgba(59,130,246,0.08); border-color:var(--accent)}
 .btn{
